@@ -30,7 +30,7 @@ ANALYTICS_LIST_DEF = {
 # ROTA EXTRA: Página Inicial (para não dar erro 404 no link base)
 @app.route('/')
 def home():
-    return "<h1>O Activity Provider está a funcionar!</h1><p>Use os endpoints específicos (/configuracao.html, etc.) para testar.</p>"
+    return "<h1>O Activity Provider está a funcionar!</h1><p>Hugo Alexandre 2200791</p>"
 
 # 1. PÁGINA DE CONFIGURAÇÃO (config_url)
 @app.route('/configuracao.html', methods=['GET'])
@@ -132,3 +132,4 @@ def get_analytics_list():
 # --- INICIALIZAÇÃO ---
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
+
